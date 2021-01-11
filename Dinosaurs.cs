@@ -12,10 +12,11 @@ namespace RobotsVsDinosaurs
         //HEALTH 
         //ENERGY 
         //ATTACK POWER 
-        string tank;
-        int health;
-        int energy;
-        int attackPower;
+        public string tank;
+        public int health;
+        public int energy;
+        public int attackPower;
+        public int takeDamage;
 
 
 
@@ -39,9 +40,22 @@ namespace RobotsVsDinosaurs
 
         //MEMBER METHODS - WHAT IT CAN DO 
 
-        AttackRobots(//robots objects)
+        //AttackRobots(//robots objects)
             // .notation to access parameters for classes 
 
+        public int AttackRobots(Robots robots)
+        {
+            
+
+        }
+        public void DinosaursLoseHealth(Dinosaurs dinosaurs)
+        {
+            if (true)
+            {
+                health < energy;
+            } takeDamage = health - energy;
+        }
+        
 
 
     }
