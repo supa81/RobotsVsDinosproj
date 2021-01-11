@@ -12,7 +12,7 @@ namespace RobotsVsDinosaurs
         //HEALTH
         //POWER LEVEL 
         //WEPON (SWORD)
-        //ATTACK POWER supa
+        //ATTACK POWER 
 
 
 
