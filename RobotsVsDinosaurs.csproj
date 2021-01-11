@@ -5,8 +5,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="\\Mac\Home\Desktop\rvd.cs" Link="rvd.cs" />
-  </ItemGroup>
-
 </Project>

@@ -39,7 +39,8 @@ namespace RobotsVsDinosaurs
 
         //MEMBER METHODS - WHAT IT CAN DO 
 
-
+        AttackRobots(//robots objects)
+            // .notation to access parameters for classes 
 
 
 
