@@ -13,12 +13,26 @@ namespace RobotsVsDinosaurs
         //POWER LEVEL 
         //WEPON (SWORD)
         //ATTACK POWER 
-
+        string name;
+        int health;
+        int powerLevel;
+        string sword;
+        int attackPower;
 
 
 
         // CONSTRUCTOR -  SPAWNING IN 
+        public Robots(string name, int health, int powerLevel, string sword, int attackPower )
+        {
 
+            this.name = name;
+            this.health = health;
+            this.powerLevel = powerLevel;
+            this.sword = sword;
+            this.attackPower = attackPower;
+
+
+        }
 
 
 

@@ -8,17 +8,28 @@ namespace RobotsVsDinosaurs
     {
 
         // MEMBER VARIABLES - WHAT IS HAS 
-        //TYPE
+        //TYPE 
         //HEALTH 
         //ENERGY 
         //ATTACK POWER 
-
+        string tank;
+        int health;
+        int energy;
+        int attackPower;
 
 
 
         // CONSTRUCTOR -  SPAWNING IN 
-        public Dinosaurs()
+        public Dinosaurs(string tank, int health, int energy, int attackPower)
         {
+            this.tank = tank;
+            this.health = health;
+            this.energy = energy;
+            this.attackPower = attackPower;
+
+
+
+
 
         }
 
