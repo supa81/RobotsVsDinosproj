@@ -13,44 +13,49 @@ namespace RobotsVsDinosaurs
         //POWER LEVEL 
         //WEPON (SWORD)
         //ATTACK POWER 
-        string name;
-        int health;
-        int powerLevel;
-        string sword;
-        int attackPower;
-        int damage;
-        int takeDamage;
+        public string name;
+        public int health;
+        public int powerLevel;
+        public Wepons sword;
+        public int attackPower;
+        public int damage;
+        public int takeDamage;
+        public int maxHealth;
 
 
 
         // CONSTRUCTOR -  SPAWNING IN 
-        public Robots(string name, int health, int powerLevel, string sword, int attackPower )
+        public Robots(string name, int health, int powerLevel, Wepons sword, int attackPower, int maxHealth)
         {
 
             this.name = name;
             this.powerLevel = powerLevel;
             this.sword = sword;
-            this.attackPower = attackPower;
             this.health = health;
+            this.attackPower = attackPower;
+            this.maxHealth = maxHealth;
 
 
         }
+
         //MEMBER METHODS - WHAT IT CAN DO 
 
-        public void AttackDinosaurs(Dinosaurs dinosaurs)
+        public void AttackDinosaurs(Dinosaurs dinosaur)
         {
-           //.notation from dinos
+            //.notation from dinos
+            // .energy - .health from dinos ??
+            dinosaur.health -= sword.attackPower;
+
         }
 
-        public void RobotsLoseHealth(Robots robots)
+        public void RobotsLoseHealth(Dinosaurs dinosaur)
         {
-            if (health < attackPower)
+            if (health < dinosaur.attackPower)
             {
                 takeDamage = health - attackPower;
             }
         }
-
-
+       
 
 
 

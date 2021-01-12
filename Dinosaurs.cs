@@ -43,16 +43,18 @@ namespace RobotsVsDinosaurs
         //AttackRobots(//robots objects)
             // .notation to access parameters for classes 
 
-        public void AttackRobots(Robots robots)
+        public void AttackRobots(Dinosaurs dinosaur, Robots robot)
         {
-           
+
+            robot.health -= attackPower;
 
         }
-        public void DinosaursLoseHealth(Dinosaurs dinosaurs)
+        public void DinosaursLoseHealth(Robots robot)
         {
-            if (health < attackPower)
+            if (health < robot.attackPower)
             {
                 takeDamage = health - attackPower;
+                Console.WriteLine(" Your taking damage ");
             } 
         }
         
