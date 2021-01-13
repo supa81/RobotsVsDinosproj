@@ -12,51 +12,32 @@ namespace RobotsVsDinosaurs
         //HEALTH 
         //ENERGY 
         //ATTACK POWER 
-        public string tank;
+        public string type;
         public int health;
         public int energy;
         public int attackPower;
-        public int takeDamage;
-
-
-
+       
         // CONSTRUCTOR -  SPAWNING IN 
-        public Dinosaurs(string tank, int health, int energy, int attackPower)
+        public Dinosaurs(string type, int health, int energy, int attackPower)
         {
-            this.tank = tank;
+            this.type = type;
             this.health = health;
             this.energy = energy;
             this.attackPower = attackPower;
-
-
-
-
-
         }
-
-
-
-
 
         //MEMBER METHODS - WHAT IT CAN DO 
 
         //AttackRobots(//robots objects)
             // .notation to access parameters for classes 
 
-        public void AttackRobots(Dinosaurs dinosaur, Robots robot)
+        public void AttackRobots(Robots robot)
         {
 
             robot.health -= attackPower;
 
         }
-        public void DinosaursLoseHealth(Robots robot)
-        {
-            if (health < robot.attackPower)
-            {
-                takeDamage = health - attackPower;
-                Console.WriteLine(" Your taking damage ");
-            } 
-        }
+       
         
 
 

@@ -8,21 +8,23 @@ namespace RobotsVsDinosaurs
     {
         // MEMBER VARIABLES - WHAT IS HAS
         public List<Robots> fleet;
-
-
+        Robots R2D2 = new Robots( "R2D2", 100, 250, new Wepons(50));
+        Robots T3000 = new Robots( "T3000", 100, 250, new Wepons(70));
+        Robots RoboCop = new Robots( "RoboCop", 300, 300, new Wepons(100));
         //constructor - spawn 
 
+        public Fleet()
+        {
+            fleet = new List<Robots>();
+            fleet.Add(R2D2);
+            fleet.Add(T3000);
+            fleet.Add(RoboCop);
 
+        }
 
 
         //member variables - what is can do 
 
-        public void AddRobots(Robots robots)
-        {
-            fleet.Add(robots);
-
-
-        }
 
 
     }

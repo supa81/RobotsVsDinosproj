@@ -16,9 +16,9 @@ namespace RobotsVsDinosaurs
 
 
         // constructor spawn wepons 
-        public Wepons(int attackPower)
+        public Wepons(int sword)
         {
-            this.attackPower = attackPower;
+            this.attackPower = sword;
         }
 
 

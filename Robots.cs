@@ -17,23 +17,21 @@ namespace RobotsVsDinosaurs
         public int health;
         public int powerLevel;
         public Wepons sword;
-        public int attackPower;
-        public int damage;
-        public int takeDamage;
-        public int maxHealth;
+        
+      
+        
 
 
 
         // CONSTRUCTOR -  SPAWNING IN 
-        public Robots(string name, int health, int powerLevel, Wepons sword, int attackPower, int maxHealth)
+        public Robots(string name, int health, int powerLevel, Wepons sword)
         {
 
             this.name = name;
             this.powerLevel = powerLevel;
             this.sword = sword;
             this.health = health;
-            this.attackPower = attackPower;
-            this.maxHealth = maxHealth;
+            
 
 
         }
@@ -48,13 +46,7 @@ namespace RobotsVsDinosaurs
 
         }
 
-        public void RobotsLoseHealth(Dinosaurs dinosaur)
-        {
-            if (health < dinosaur.attackPower)
-            {
-                takeDamage = health - attackPower;
-            }
-        }
+        
        
 
 
