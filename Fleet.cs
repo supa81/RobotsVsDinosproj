@@ -10,7 +10,7 @@ namespace RobotsVsDinosaurs
         public List<Robots> fleet;
         Robots R2D2 = new Robots( "R2D2", 100, 250, new Wepons(50));
         Robots T3000 = new Robots( "T3000", 100, 250, new Wepons(70));
-        Robots RoboCop = new Robots( "RoboCop", 300, 300, new Wepons(100));
+        Robots RoboCop = new Robots( "RoboCop", 100, 300, new Wepons(130));
         //constructor - spawn 
 
         public Fleet()

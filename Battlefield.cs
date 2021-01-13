@@ -14,8 +14,8 @@ namespace RobotsVsDinosaurs
         //example dino to attack robot-- robotobjectname.attack(dinoobjectname) 
         //Console.WriteLine(the dinos health is now ###
 
-        Fleet fleet;
-        Herd herd;
+        public Fleet fleet;
+        public Herd herd;
 
 
         //CONSTRUCTOR SPAWNning in ? 
@@ -30,24 +30,23 @@ namespace RobotsVsDinosaurs
 
         //MEMBER METHODS WHAT IT CAN DO
 
-        public bool AttackDinosaurs(Dinosaurs dinosaurs, Robots robots) 
         
-        {
             //i want specific robots to attack dinos and vise versa
             //i want one side to win when wever one team reaches 0
-            while (true)
-            {
-                dinosaurs.health < robots.sword.attackPower;
-            }
-
-           
-        }
-        public void AttackRobots()
+          
+        public void RunGame()
         {
-            AttackRobots();
 
+            fleet.fleet[0].AttackDinosaurs(herd.herd[0]);
+            fleet.fleet[1].AttackDinosaurs(herd.herd[1]);
+            fleet.fleet[2].AttackDinosaurs(herd.herd[2]);
+            herd.herd[0].AttackRobots(fleet.fleet[0]);
+            herd.herd[1].AttackRobots(fleet.fleet[1]);
+            herd.herd[2].AttackRobots(fleet.fleet[2]);
+          
         }
-
+        
+        
        //enemeys attack until either side wins. 
        
 
